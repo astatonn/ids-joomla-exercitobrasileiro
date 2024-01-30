@@ -1,0 +1,179 @@
+; Joomla! Project
+; (C) 2019 Open Source Matters, Inc. <https://www.joomla.org>
+; License GNU General Public License version 2 or later; see LICENSE.txt
+; Note : This file needs to be saved as UTF-8
+
+eu
+meu
+meu
+eu mesmo
+nós
+nosso
+nosso
+nós mesmos
+você
+seu
+seu
+você mesmo
+vocês mesmos
+ele
+ele
+dele
+ele mesmo
+ela
+dela
+dela
+ela mesma
+isto
+isso é
+em si
+eles
+eles
+deles
+deles
+eles mesmos
+o que
+qual
+Quem
+a quem
+esse
+que
+esses
+aqueles
+sou
+é
+são
+era
+eram
+ser
+estive
+ser
+ter
+tem
+tive
+tendo
+fazer
+faz
+fez
+fazendo
+seria
+deve
+poderia
+deveria
+eu sou
+você é
+ele é
+ela é
+isso é
+eram
+eles estão
+eu tenho
+você
+nós temos
+eles têm
+eu ia
+você
+ele
+cabana
+qua
+Eles teriam
+doente
+você vai
+inferno
+concha
+bem
+Eles vão
+não é
+não são
+Não
+Não era
+não tem
+não
+não tinha
+não
+não
+não
+não vai
+não
+Shan't
+não deveria
+não pode
+não pode
+não poderia
+não deve
+Vamos
+isso é
+quem é
+o que é
+Aqui está
+há
+quando
+Onde está a
+Por que
+como
+a
+um
+o
+e
+mas
+se
+ou
+porque
+como
+até
+enquanto
+de
+no
+por
+para
+com
+sobre
+contra
+entre
+em
+através
+durante
+antes
+depois
+acima
+abaixo
+para
+de
+acima
+abaixo
+em
+fora
+sobre
+desligado
+sobre
+sob
+de novo
+avançar
+então
+uma vez
+aqui
+lá
+quando
+onde
+por que
+como
+todos
+qualquer
+ambos
+cada
+alguns
+mais
+maioria
+outro
+alguns
+tal
+não
+nem
+não
+apenas
+ter
+mesmo
+então
+que
+também
+muito
