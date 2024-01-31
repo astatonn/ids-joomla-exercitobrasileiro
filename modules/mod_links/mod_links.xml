@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>Seção de Links</name>
+	<author>3º Sgt Souza Lima</author>
+	<creationDate>31/01/2024</creationDate>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>lucas.lima.rk@gmail.com</authorEmail>
+	<version>1.0.0</version>
+	<description>Módulo da seção de links</description>
+	<namespace path="src">Joomla\Module\Links</namespace>
+	<files>
+		<filename module="mod_links">mod_links.php</filename>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<help key="Site_Modules:_Links" />
+	<config>
+		<fields name="params">
+			
+		</fields>
+	</config>
+</extension>

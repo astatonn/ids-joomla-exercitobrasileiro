@@ -22,6 +22,7 @@ form[role="search"] {
     right: 0;
 }
 
+
 /* Cor e hover do Título no Header */
 
 .br-header .header-title a {
@@ -260,7 +261,6 @@ div.newsflash-container img {
     position: relative;
 
 }
-
 
 
 div.newsflash a:not(:disabled):hover {

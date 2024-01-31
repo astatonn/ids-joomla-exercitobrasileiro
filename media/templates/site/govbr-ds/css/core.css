@@ -24991,6 +24991,71 @@ a.br-button {
   color: var(--color);
   margin-bottom: var(--spacing-scale-2x);
 }
+
+.card {
+  background-color: #fff;
+  border-color: rgba(0,0,0,0.125);
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 0.0625rem;
+  display: block;
+  margin-bottom: 1.5rem;
+  min-width: 0;
+  position: relative; 
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-decoration: none;
+  box-shadow: 0px 10px 20px rgb(83 130 0 / 25%);
+  border-radius: 10px;
+  
+}
+
+.accordion-example .card-content,
+.card .front .content {
+  padding: var(--card-padding);
+}
+.card .card-content *:last-child,
+.card .front .content *:last-child {
+  margin-bottom: 0;
+}
+.card .front .header,
+.card .card-header {
+  padding: var(--card-padding) var(--card-padding) 0;
+}
+.card .front .footer,
+.card .card-footer {
+  padding: 0 var(--card-padding) var(--card-padding);
+}
+.card.h-fixed .card-content {
+  max-height: var(--card-height-fixed);
+  overflow-y: auto;
+}
+.card.h-fixed .card-content::-webkit-scrollbar {
+  height: var(--spacing-scale-base);
+  width: var(--spacing-scale-base);
+}
+.card.h-fixed .card-content::-webkit-scrollbar-track {
+  background: var(--gray-10);
+}
+.card.h-fixed .card-content::-webkit-scrollbar-thumb {
+  background: var(--gray-30);
+}
+.card.h-fixed .card-content:hover::-webkit-scrollbar-thumb {
+  background: var(--gray-40);
+}
+.card.h-fixed .card-footer {
+  padding-top: var(--card-padding);
+}
+.card.hover:hover {
+  background-color: #f8f9fa;
+  background-image: linear-gradient(rgba(var(--gold-vivid-5), var(--hover)), rgba(var(--gold-vivid-5), var(--hover)));
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+
 .br-card .card-content,
 .br-card .front .content {
   padding: var(--card-padding);
@@ -25030,6 +25095,7 @@ a.br-button {
 .br-card.hover:hover {
   background-image: linear-gradient(rgba(var(--color-rgb), var(--hover)), rgba(var(--color-rgb), var(--hover)));
 }
+
 .br-card.inverted, .br-card.dark-mode {
   --color: var(--color-dark);
   --color-rgb: var(--color-dark-rgb);
@@ -25041,6 +25107,12 @@ a.br-button {
   --pressed: var(--pressed-dark);
   --focus-color: var(--focus-color-dark);
   --focus: var(--focus-color);
+}
+
+.card-interactive {
+  cursor: pointer;
+  outline: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out ;
 }
 
 .br-carousel {
@@ -26247,6 +26319,10 @@ hr {
   width: 100%;
   overflow: unset;
   white-space: nowrap;
+}
+
+.card-text {
+  /* background-color: #555; */
 }
 
 .portlet-title-text::before {
