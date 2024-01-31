@@ -64,47 +64,51 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
             <div class="<?php echo $largura ?>">
                 <div class="header-top">
                     <div class="header-logo">
-                        <?php if ($this->params->get('logo_comlink', '0') == 1) : ?>
-                            <a href="<?php echo Uri::root(); ?>">
-                            <?php elseif ($this->params->get('logo_comlink', '0') == 2) : ?>
-                                <a href="<?php echo $this->params->get('logo_link', ''); ?>">
+                        <div class="logo-om">
+                            <?php if ($this->params->get('logo_comlink', '0') == 1) : ?>
+                                <a href="<?php echo Uri::root(); ?>">
+                                <?php elseif ($this->params->get('logo_comlink', '0') == 2) : ?>
+                                    <a href="<?php echo $this->params->get('logo_link', ''); ?>">
+                                    <?php endif; ?>
+                                    <img src="<?php echo $this->params->get('imagem_logo', 'media/templates/site/govbr-ds/img/logo.svg'); ?>" alt="logo" />
+                                    <?php if ($this->params->get('logo_comlink', '0') != 0) : ?>
+                                    </a>
                                 <?php endif; ?>
-                                <img src="<?php echo $this->params->get('imagem_logo', 'media/templates/site/govbr-ds/img/logo.svg'); ?>" alt="logo" />
-                                <?php if ($this->params->get('logo_comlink', '0') != 0) : ?>
-                                </a>
-                            <?php endif; ?>
-                            <?php if (!empty($this->params->get('texto_assinatura', ''))) : ?>
-                                <span class="br-divider vertical mx-half mx-sm-1"></span>
-                                <div class="header-sign"><?php echo $this->params->get('texto_assinatura', ''); ?></div>
-                            <?php endif; ?>
+                                <?php if (!empty($this->params->get('texto_assinatura', ''))) : ?>
+                                    <span class="br-divider vertical mx-half mx-sm-1"></span>
+                                    <div class="header-sign"><?php echo $this->params->get('texto_assinatura', ''); ?></div>
+                                <?php endif; ?>
+                        </div>
+                        <span class="br-divider vertical"></span>
+                        <a href="https://www.gov.br/defesa/" class="header-sign h8 m-0">Ministério da Defesa</a>
                     </div>
                     <div class="header-govlinks">
-                        <ul aria-label="Páginas do site" class="">
-                            <li class="">
-                                <a class="" href="https://www.gov.br/pt-br/orgaos-do-governo" target="_blank" >
-                                    <span class=""> Órgãos do Governo </span>
+                        <ul aria-label="Páginas do site">
+                            <li>
+                                <a href="https://www.gov.br/pt-br/orgaos-do-governo" target="_blank">
+                                    <span> Órgãos do Governo </span>
                                 </a>
 
                             </li>
 
-                            <li class="">
-                                <a class="" href="https://www.gov.br/acessoainformacao/pt-br" target="_blank" >
+                            <li>
+                                <a href="https://www.gov.br/acessoainformacao/pt-br" target="_blank">
                                     <span class="text-truncate"> Acesso à Informação </span>
                                 </a>
 
                             </li>
 
 
-                            <li class="">
-                                <a class="" href="https://www4.planalto.gov.br/legislacao" target="_blank" >
-                                    <span class=""> Legislação </span>
+                            <li>
+                                <a href="https://www4.planalto.gov.br/legislacao" target="_blank">
+                                    <span> Legislação </span>
                                 </a>
 
                             </li>
 
-                            <li class="">
-                                <a class="" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" target="_blank">
-                                    <span class=""> Acessibilidade </span>
+                            <li>
+                                <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" target="_blank">
+                                    <span> Acessibilidade </span>
                                 </a>
 
                             </li>

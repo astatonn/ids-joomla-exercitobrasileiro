@@ -25,7 +25,13 @@ endif;
 
 ?>
 <div class="container">
-    ÚLTIMAS NOTÍCIAS
+    <div class="autofit-float autofit-row portlet-header">
+        <div class="autofit-col autofit-col-expand">
+            <div class="portlet-title-text">
+                Últimas Notícias
+            </div>
+        </div>
+    </div>
     <div class="newsflash row">
         <?php foreach ($list as $item) : ?>
             <?php if (!empty($item->imageSrc)) : ?>
