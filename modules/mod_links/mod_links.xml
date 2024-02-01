@@ -7,7 +7,7 @@
 	<authorEmail>lucas.lima.rk@gmail.com</authorEmail>
 	<version>1.0.0</version>
 	<description>Módulo da seção de links</description>
-	<namespace path="src">Joomla\Module\Links</namespace>
+	<namespace path="modules/mod_links">Joomla\Module\Links</namespace>
 	<files>
 		<filename module="mod_links">mod_links.php</filename>
 		<folder>src</folder>
