@@ -6,6 +6,7 @@ use Joomla\CMS\Helper\ModuleHelper;
 // Obtém os parâmetros do módulo
 $params = json_decode(ModuleHelper::getModule('mod_links')->params, true);
 
+$linkAmount = $params['link-amount'];
 
 ?>
 <div class="container">
@@ -19,78 +20,20 @@ $params = json_decode(ModuleHelper::getModule('mod_links')->params, true);
         </div>
     </div>
 
-    <div class="links-body">
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-3 pb-4">
-                <a href="#" target="_blank" class="card h-100 m-0 card-intercative card-interactive-primary card-template template-card">
-                    <div class="text-center pb-5 card-content">
-                        <h5 class="card-text px-3 pb-0">Teste</h5>
+
+    <div class="links-container">
+        <?php for ($i = 1; $i <= $linkAmount ; $i++) : ?>
+            <div class="link-col">
+                <a href="<?php echo $params['url-link-' . $i]; ?>" target="_blank" class="link-link">
+                    <div class="link-card br-card">
+                        <div class="link-content">
+                            <h5 class="link-title"><?php echo $params['name-link-' . $i]; ?></h5>
+                        </div>
                     </div>
                 </a>
             </div>
-        </div>
-
+        <?php endfor; ?>
     </div>
-
-
-    <div class="row mx-auto px-3">
-        <div class="col-md">
-            <div class="br-card hover">
-                <a href="#" target="_blank">
-                    <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-text px-3 pb-0">Teste</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="br-card hover">
-                <a href="#" target="_blank">
-                    <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-text px-3 pb-0">Teste</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="br-card hover">
-                <a href="#" target="_blank">
-                    <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-text px-3 pb-0">Teste</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="br-card hover">
-                <a href="#" target="_blank">
-                    <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-text px-3 pb-0">Teste</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="br-card hover">
-                <a href="#" target="_blank">
-                    <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-text px-3 pb-0">Teste</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-md">
-            <div class="br-card hover">
-                <a href="#" target="_blank">
-                    <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                        <h5 class="card-text px-3 pb-0">Teste</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
 
 
 </div>
