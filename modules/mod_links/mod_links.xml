@@ -17,7 +17,50 @@
 	<help key="Site_Modules:_Links" />
 	<config>
 		<fields name="params">
-			
+			<fieldset name="basic-config" label='Configuração dos Menus'>
+                <field name="section-name" type="text" label="Nome da seção" description='Cria um novo módulo para inserir links' />
+                <field name="link-amount" type="list" label='Quantidade de links' description='Escolhe a quantidade de links a serem exibidos na seção' default='4'>
+                    <option value="4">4 Links</option>
+                    <option value="8">8 Links</option>
+                    <option value="12">12 Links</option>
+                </field>
+                <field name='url-link-1' type='text' label='Link 1' description="Destino do link" showon='link-amount:4,8,12' default=''/>
+                <field name='name-link-1' type='text' label='Texto Link 1' description="Nome do link" showon='link-amount:4,8,12' default=''/>
+               
+                <field name='url-link-2' type='text' label='Link 2' description="Destino do link" showon='link-amount:4,8,12' default=''/>
+                <field name='name-link-2' type='text' label='Texto Link 2' description="Nome do link" showon='link-amount:4,8,12' default=''/>
+               
+                <field name='url-link-3' type='text' label='Link 3' description="Destino do link" showon='link-amount:4,8,12' default=''/>
+                <field name='name-link-3' type='text' label='Texto Link 3' description="Nome do link" showon='link-amount:4,8,12' default=''/>
+               
+                <field name='url-link-4' type='text' label='Link 4' description="Destino do link" showon='link-amount:4,8,12' default=''/>
+                <field name='name-link-4' type='text' label='Texto Link 4' description="Nome do link" showon='link-amount:4,8,12' default=''/>
+                
+                <field name='url-link-5' type='text' label='Link 5' description="Destino do link" showon='link-amount:8,12' default=''/>
+                <field name='name-link-5' type='text' label='Texto Link 5' description="Nome do link" showon='link-amount:8,12' default=''/>
+               
+                <field name='url-link-6' type='text' label='Link 6' description="Destino do link" showon='link-amount:8,12' default=''/>
+                <field name='name-link-6' type='text' label='Texto Link 6' description="Nome do link" showon='link-amount:8,12' default=''/>
+               
+                <field name='url-link-7' type='text' label='Link 7' description="Destino do link" showon='link-amount:8,12' default=''/>
+                <field name='name-link-7' type='text' label='Texto Link 7' description="Nome do link" showon='link-amount:8,12' default=''/>
+               
+                <field name='url-link-8' type='text' label='Link 8' description="Destino do link" showon='link-amount:8,12' default=''/>
+                <field name='name-link-8' type='text' label='Texto Link 8' description="Nome do link" showon='link-amount:8,12' default=''/>
+                
+                <field name='url-link-9' type='text' label='Link 9' description="Destino do link" showon='link-amount:12' default=''/>
+                <field name='name-link-9' type='text' label='Texto Link 9' description="Nome do link" showon='link-amount:12' default=''/>
+               
+                <field name='url-link-10' type='text' label='Link 10' description="Destino do link" showon='link-amount:12' default=''/>
+                <field name='name-link-10' type='text' label='Texto Link 10' description="Nome do link" showon='link-amount:12' default=''/>
+               
+                <field name='url-link-11' type='text' label='Link 11' description="Destino do link" showon='link-amount:12' default=''/>
+                <field name='name-link-11' type='text' label='Texto Link 11' description="Nome do link" showon='link-amount:12' default=''/>
+               
+                <field name='url-link-12' type='text' label='Link 12' description="Destino do link" showon='link-amount:12' default=''/>
+                <field name='name-link-12' type='text' label='Texto Link 12' description="Nome do link" showon='link-amount:12' default=''/>
+
+            </fieldset>
 		</fields>
 	</config>
 </extension>
