@@ -247,15 +247,15 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                             <?php if ($app->getMenu()->getActive() == $app->getMenu()->getDefault()) : ?>
                                 <div id="ouvidoria-acessoinformacao">
                                     <div class="row d-block mx-auto text-center" id="ouvidoria-acessoinformacao-header">
-                                        <h1>Ouvidoria e Acesso à Informação</h1>
+                                        <h1 class="br-green-vivid-80">Ouvidoria e Acesso à Informação</h1>
                                         <h2>Você pode realizar manifestações nos seguintes canais</h2>
                                     </div>
-                                    <div class="row mx-auto px-3" id="ouvidoria-acessoinformacao-cards">
+                                    <div class="row mx-auto px-3 " id="ouvidoria-acessoinformacao-cards">
                                         <div class="col-md">
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=1&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-bullhorn" aria-hidden="true"></i><span>Denúncia</span>
+                                                        <i class="fas fa-bullhorn br-green-vivid-80" aria-hidden="true"></i><span class="br-green-vivid-80">Denúncia</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -264,7 +264,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=5&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-comments" aria-hidden="true"></i><span>Solicitação</span>
+                                                        <i class="fas fa-comments br-green-vivid-80" aria-hidden="true"></i><span class="br-green-vivid-80">Solicitação</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -273,7 +273,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=3&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-thumbs-up" aria-hidden="true"></i><span>Elogio</span>
+                                                        <i class="fas fa-thumbs-up br-green-vivid-80" aria-hidden="true"></i><span class="br-green-vivid-80">Elogio</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -282,7 +282,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=2&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-thumbs-down" aria-hidden="true"></i><span>Reclamação</span>
+                                                        <i class="fas fa-thumbs-down br-green-vivid-80" aria-hidden="true"></i><span class="br-green-vivid-80">Reclamação</span>
                                                     </div>
                                                 </a>
                                             </div>

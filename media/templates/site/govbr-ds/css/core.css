@@ -26218,6 +26218,10 @@ hr {
   --focus-color: var(--focus-color-dark);
   --focus: var(--focus-color);
 }
+
+.br-green-vivid-80 {
+  color: var(--green-vivid-80) !important;
+}
 .br-footer .br-item {
   --color: var(--color-dark);
   --color-rgb: var(--color-dark-rgb);
