@@ -16687,11 +16687,52 @@ pre,
   list-style: none  !important;
 }
 
+.menu-menutype {
+  text-transform: capitalize;
+  font-size: var(--font-size-scale-up-01);
+  font-weight: bold;
+  animation: none !important;
+  transition: none !important;
+}
+
+
 .menu-links ul li {
   position: relative;
   transition: border-bottom 0.3s ease; 
   margin-bottom: 15px;
+  margin-left: 20px;
+  
 }
+
+.menu-links ul li:nth-child(1) {
+  position: relative;
+  transition: border-bottom 0.3s ease; 
+  margin-bottom: 15px;
+  margin-left: 0px !important;
+  text-transform: capitalize;
+  font-size: var(--font-size-scale-up-01);
+  font-weight: bold;
+  animation: none !important;
+  transition: none !important;
+  
+}
+
+.menu-links ul li:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Inicialmente, a largura é zero para começar da esquerda */
+  height: 0px;
+  background-color: transparent;
+  transition: none !important;
+}
+
+.menu-links ul li:nth-child(1):hover::after {
+  width: 0%; 
+  background-color: var(--green-vivid-80);
+}
+
 
 .menu-links ul li::after {
   content: '';
