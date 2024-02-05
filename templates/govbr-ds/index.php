@@ -339,7 +339,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
             <div class="<?php echo $largura ?>">
                 <div class="info">
                     <div class="text-down-01 text-medium pb-3">
-                        <?php echo $this->params->get('texto_licenca', 'Desenvolvido com o CMS de c&oacute;digo aberto <strong><a aria-label="Desenvolvido por Comunidade Joomla" href="https://www.joomla.org">Joomla</a></strong>.'); ?>
+                        Desenvolvido por 3º Sgt Int/2017 Souza Lima • <a href="github.com/astatonn">Github</a> • <a href="https://www.linkedin.com/in/lucas-lima-477377a5/">Linkedin</a> - 1º Centro de Telemática de Área
                     </div>
                 </div>
             </div>
