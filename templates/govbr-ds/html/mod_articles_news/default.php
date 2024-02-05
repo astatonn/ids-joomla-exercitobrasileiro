@@ -11,6 +11,7 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Layout\LayoutHelper;
+use Joomla\Module\ArticlesNews\Site\Helper\ArticlesNewsHelper;
 
 if (!$list) {
     return;
@@ -23,6 +24,7 @@ if (count($list) < 5) :
     endif;
 endif;
 
+
 ?>
 <div class="container">
     <div class="autofit-float autofit-row portlet-header">
@@ -32,11 +34,11 @@ endif;
             </div>
         </div>
     </div>
-    <div class="newsflash row">
+    <div class="links-container">
         <?php foreach ($list as $item) : ?>
             <?php if (!empty($item->imageSrc)) : ?>
 
-                <div class="newsflash-item <?php echo $colunas; ?>">
+                <div class="link-col br-center-articles <?php echo $colunas; ?>">
                     <div class="newsflash-container">
                         <a href="<?php echo $item->link; ?>" title="<?php echo $item->title; ?>">
                             <?php

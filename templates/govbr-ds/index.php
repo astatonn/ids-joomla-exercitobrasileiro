@@ -255,7 +255,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=1&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-bullhorn br-green-vivid-80" aria-hidden="true"></i><span class="br-green-vivid-80">Denúncia</span>
+                                                        <i class="fas fa-bullhorn br-green-vivid-80" aria-hidden="true"></i><span class="br-engengrau">Denúncia</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -264,7 +264,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=5&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-comments br-green-vivid-80" aria-hidden="true"></i><span class="br-green-vivid-80">Solicitação</span>
+                                                        <i class="fas fa-comments br-green-vivid-80" aria-hidden="true"></i><span class="br-engengrau">Solicitação</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -273,7 +273,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=3&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-thumbs-up br-green-vivid-80" aria-hidden="true"></i><span class="br-green-vivid-80">Elogio</span>
+                                                        <i class="fas fa-thumbs-up br-green-vivid-80" aria-hidden="true"></i><span class="br-engengrau">Elogio</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -282,7 +282,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=2&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-thumbs-down br-green-vivid-80" aria-hidden="true"></i><span class="br-green-vivid-80">Reclamação</span>
+                                                        <i class="fas fa-thumbs-down br-green-vivid-80" aria-hidden="true"></i><span class="br-engengrau">Reclamação</span>
                                                     </div>
                                                 </a>
                                             </div>

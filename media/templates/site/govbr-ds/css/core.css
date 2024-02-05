@@ -26222,6 +26222,10 @@ hr {
 .br-green-vivid-80 {
   color: var(--green-vivid-80) !important;
 }
+
+.br-engengrau {
+  color: #1d1d1f;
+}
 .br-footer .br-item {
   --color: var(--color-dark);
   --color-rgb: var(--color-dark-rgb);
@@ -31498,6 +31502,11 @@ button.br-item:not(:disabled):active {
   margin-right: 0;
   justify-content: center;
   margin: 30px 0 60px 0;
+}
+
+.br-center-articles {
+  display: flex;
+  justify-content: center;
 }
 
 
