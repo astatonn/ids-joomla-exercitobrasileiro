@@ -301,7 +301,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
             <div class="<?php echo $largura ?>">
                 <div class="logo"><img src="<?php echo $this->params->get('imagem_logo_footer', $logo_footer); ?>" alt="Imagem" /></div>
                 <?php if ($this->countModules('menumapa')) : ?>
-                    <div class="br-list horizontal" data-toggle="data-toggle" data-sub="data-sub">
+                    <div class="horizontal br-footer-menu" data-toggle="data-toggle" data-sub="data-sub">
                         <jdoc:include type="modules" name="menumapa" style="none" />
                     </div>
                 <?php endif; ?>
