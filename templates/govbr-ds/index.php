@@ -64,47 +64,51 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
             <div class="<?php echo $largura ?>">
                 <div class="header-top">
                     <div class="header-logo">
-                        <?php if ($this->params->get('logo_comlink', '0') == 1) : ?>
-                            <a href="<?php echo Uri::root(); ?>">
-                            <?php elseif ($this->params->get('logo_comlink', '0') == 2) : ?>
-                                <a href="<?php echo $this->params->get('logo_link', ''); ?>">
+                        <div class="logo-om">
+                            <?php if ($this->params->get('logo_comlink', '0') == 1) : ?>
+                                <a href="<?php echo Uri::root(); ?>">
+                                <?php elseif ($this->params->get('logo_comlink', '0') == 2) : ?>
+                                    <a href="<?php echo $this->params->get('logo_link', ''); ?>">
+                                    <?php endif; ?>
+                                    <img src="<?php echo $this->params->get('imagem_logo', 'media/templates/site/govbr-ds/img/logo.svg'); ?>" alt="logo" />
+                                    <?php if ($this->params->get('logo_comlink', '0') != 0) : ?>
+                                    </a>
                                 <?php endif; ?>
-                                <img src="<?php echo $this->params->get('imagem_logo', 'media/templates/site/govbr-ds/img/logo.svg'); ?>" alt="logo" />
-                                <?php if ($this->params->get('logo_comlink', '0') != 0) : ?>
-                                </a>
-                            <?php endif; ?>
-                            <?php if (!empty($this->params->get('texto_assinatura', ''))) : ?>
-                                <span class="br-divider vertical mx-half mx-sm-1"></span>
-                                <div class="header-sign"><?php echo $this->params->get('texto_assinatura', ''); ?></div>
-                            <?php endif; ?>
+                                <?php if (!empty($this->params->get('texto_assinatura', ''))) : ?>
+                                    <span class="br-divider vertical mx-half mx-sm-1"></span>
+                                    <div class="header-sign"><?php echo $this->params->get('texto_assinatura', ''); ?></div>
+                                <?php endif; ?>
+                        </div>
+                        <span class="br-divider vertical"></span>
+                        <a href="https://www.gov.br/defesa/" class="header-sign h8 m-0">Ministério da Defesa</a>
                     </div>
                     <div class="header-govlinks">
-                        <ul aria-label="Páginas do site" class="">
-                            <li class="">
-                                <a class="" href="https://www.gov.br/pt-br/orgaos-do-governo" target="_blank" >
-                                    <span class=""> Órgãos do Governo </span>
+                        <ul aria-label="Páginas do site">
+                            <li>
+                                <a href="https://www.gov.br/pt-br/orgaos-do-governo" target="_blank">
+                                    <span> Órgãos do Governo </span>
                                 </a>
 
                             </li>
 
-                            <li class="">
-                                <a class="" href="https://www.gov.br/acessoainformacao/pt-br" target="_blank" >
+                            <li>
+                                <a href="https://www.gov.br/acessoainformacao/pt-br" target="_blank">
                                     <span class="text-truncate"> Acesso à Informação </span>
                                 </a>
 
                             </li>
 
 
-                            <li class="">
-                                <a class="" href="https://www4.planalto.gov.br/legislacao" target="_blank" >
-                                    <span class=""> Legislação </span>
+                            <li>
+                                <a href="https://www4.planalto.gov.br/legislacao" target="_blank">
+                                    <span> Legislação </span>
                                 </a>
 
                             </li>
 
-                            <li class="">
-                                <a class="" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" target="_blank">
-                                    <span class=""> Acessibilidade </span>
+                            <li>
+                                <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" target="_blank">
+                                    <span> Acessibilidade </span>
                                 </a>
 
                             </li>
@@ -243,15 +247,15 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                             <?php if ($app->getMenu()->getActive() == $app->getMenu()->getDefault()) : ?>
                                 <div id="ouvidoria-acessoinformacao">
                                     <div class="row d-block mx-auto text-center" id="ouvidoria-acessoinformacao-header">
-                                        <h1>Ouvidoria e Acesso à Informação</h1>
+                                        <h1 class="br-green-vivid-80">Ouvidoria e Acesso à Informação</h1>
                                         <h2>Você pode realizar manifestações nos seguintes canais</h2>
                                     </div>
-                                    <div class="row mx-auto px-3" id="ouvidoria-acessoinformacao-cards">
+                                    <div class="row mx-auto px-3 " id="ouvidoria-acessoinformacao-cards">
                                         <div class="col-md">
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=1&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-bullhorn" aria-hidden="true"></i><span>Denúncia</span>
+                                                        <i class="fas fa-bullhorn br-green-vivid-80" aria-hidden="true"></i><span class="br-engengrau">Denúncia</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -260,7 +264,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=5&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-comments" aria-hidden="true"></i><span>Solicitação</span>
+                                                        <i class="fas fa-comments br-green-vivid-80" aria-hidden="true"></i><span class="br-engengrau">Solicitação</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -269,7 +273,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=3&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-thumbs-up" aria-hidden="true"></i><span>Elogio</span>
+                                                        <i class="fas fa-thumbs-up br-green-vivid-80" aria-hidden="true"></i><span class="br-engengrau">Elogio</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -278,7 +282,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
                                             <div class="br-card hover">
                                                 <a href="https://falabr.cgu.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx?tipo=2&orgaoDestinatario=<?php echo $this->params->get('atendimentocidadao_siorg', ''); ?>">
                                                     <div class="card-content d-flex flex-column justify-content-center align-items-center">
-                                                        <i class="fas fa-thumbs-down" aria-hidden="true"></i><span>Reclamação</span>
+                                                        <i class="fas fa-thumbs-down br-green-vivid-80" aria-hidden="true"></i><span class="br-engengrau">Reclamação</span>
                                                     </div>
                                                 </a>
                                             </div>
@@ -297,7 +301,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
             <div class="<?php echo $largura ?>">
                 <div class="logo"><img src="<?php echo $this->params->get('imagem_logo_footer', $logo_footer); ?>" alt="Imagem" /></div>
                 <?php if ($this->countModules('menumapa')) : ?>
-                    <div class="br-list horizontal" data-toggle="data-toggle" data-sub="data-sub">
+                    <div class="horizontal br-footer-menu" data-toggle="data-toggle" data-sub="data-sub">
                         <jdoc:include type="modules" name="menumapa" style="none" />
                     </div>
                 <?php endif; ?>
@@ -335,7 +339,7 @@ $logo_footer = $this->params->get('cor_footer') ? 'media/templates/site/govbr-ds
             <div class="<?php echo $largura ?>">
                 <div class="info">
                     <div class="text-down-01 text-medium pb-3">
-                        <?php echo $this->params->get('texto_licenca', 'Desenvolvido com o CMS de c&oacute;digo aberto <strong><a aria-label="Desenvolvido por Comunidade Joomla" href="https://www.joomla.org">Joomla</a></strong>.'); ?>
+                        Desenvolvido por 3º Sgt Int/2017 Souza Lima • <a href="github.com/astatonn">Github</a> • <a href="https://www.linkedin.com/in/lucas-lima-477377a5/">Linkedin</a> - 1º Centro de Telemática de Área
                     </div>
                 </div>
             </div>

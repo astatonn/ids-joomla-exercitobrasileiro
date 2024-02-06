@@ -21,3 +21,12 @@
 2024-01-30	18:17:38	INFO	Running task#02 'Session GC'.
 2024-01-30	18:17:38	INFO	Task> SessionGC end
 2024-01-30	18:17:38	INFO	Successfully finished task#02 in 0.00 (net 0.00) seconds.
+2024-01-31	20:08:01	INFO	Running task#03 'Update Notification'.
+2024-01-31	20:08:05	INFO	Task> UpdateNotification end
+2024-01-31	20:08:05	INFO	Successfully finished task#03 in 4.12 (net 4.12) seconds.
+2024-02-06	13:56:52	INFO	Running task#03 'Update Notification'.
+2024-02-06	13:56:55	INFO	Task> UpdateNotification end
+2024-02-06	13:56:55	INFO	Successfully finished task#03 in 3.72 (net 3.73) seconds.
+2024-02-06	13:57:18	INFO	Running task#02 'Session GC'.
+2024-02-06	13:57:18	INFO	Task> SessionGC end
+2024-02-06	13:57:18	INFO	Successfully finished task#02 in 0.00 (net 0.00) seconds.

@@ -18,12 +18,10 @@ if (!$list) {
 }
 
 ?>
-
 <ul class="mod-articlescategory category-module mod-list">
     <?php if ($grouped) : ?>
         <?php foreach ($list as $groupName => $items) : ?>
         <li>
-            
             <div class="mod-articles-category-group"><?php echo Text::_($groupName); ?></div>
             <ul>
                 <?php require ModuleHelper::getLayoutPath('mod_articles_category', $params->get('layout', 'default') . '_items'); ?>
