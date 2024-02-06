@@ -98,6 +98,13 @@
     },
     {
       "type": "script",
+      "name": "@codemirror/theme-one-dark",
+      "uri": "media/vendor/codemirror/js/codemirror-theme-one-dark.min.js",
+      "importmap": true,
+      "version": "6.1.2"
+    },
+    {
+      "type": "script",
       "name": "@codemirror/view",
       "uri": "media/vendor/codemirror/js/codemirror-view.min.js",
       "importmap": true,
@@ -342,6 +349,12 @@
       "version": "1.0.2"
     },
     {
+      "name": "plg_editors_codemirror",
+      "type": "style",
+      "uri": "plg_editors_codemirror/codemirror.css",
+      "version": "bb6caa"
+    },
+    {
       "name": "codemirror",
       "type": "script",
       "uri": "plg_editors_codemirror/codemirror.min.js",
@@ -360,6 +373,7 @@
         "@codemirror/lint",
         "@codemirror/search",
         "@codemirror/state",
+        "@codemirror/theme-one-dark",
         "@codemirror/view",
         "@codemirror/autocomplete",
         "@codemirror/commands",
@@ -396,13 +410,7 @@
         "@lezer/php",
         "@lezer/xml"
       ],
-      "version": "761a1c"
-    },
-    {
-      "name": "plg_editors_codemirror",
-      "type": "style",
-      "uri": "plg_editors_codemirror/codemirror.css",
-      "version": "5b3e28"
+      "version": "b74f03"
     },
     {
       "name": "webcomponent.editor-codemirror",
@@ -417,7 +425,7 @@
       "attributes": {
         "type": "module"
       },
-      "version": "b24d93"
+      "version": "f75184"
     }
   ]
 }

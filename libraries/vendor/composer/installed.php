@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'joomla/joomla-cms',
-        'pretty_version' => 'dev-5.0/build/githublayout',
-        'version' => 'dev-5.0/build/githublayout',
-        'reference' => '0e23b165e580270f5b53f9dc0c5fd17011f4bf87',
+        'pretty_version' => 'dev-5.0-dev',
+        'version' => 'dev-5.0-dev',
+        'reference' => '5d8e929ecbc5b648b04ff50fa4038dd6aa12dfe5',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../../',
         'aliases' => array(),
@@ -254,9 +254,9 @@
             'dev_requirement' => false,
         ),
         'joomla/joomla-cms' => array(
-            'pretty_version' => 'dev-5.0/build/githublayout',
-            'version' => 'dev-5.0/build/githublayout',
-            'reference' => '0e23b165e580270f5b53f9dc0c5fd17011f4bf87',
+            'pretty_version' => 'dev-5.0-dev',
+            'version' => 'dev-5.0-dev',
+            'reference' => '5d8e929ecbc5b648b04ff50fa4038dd6aa12dfe5',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../../',
             'aliases' => array(),
@@ -428,9 +428,9 @@
             'dev_requirement' => false,
         ),
         'phpseclib/phpseclib' => array(
-            'pretty_version' => '3.0.23',
-            'version' => '3.0.23.0',
-            'reference' => '866cc78fbd82462ffd880e3f65692afe928bed50',
+            'pretty_version' => '3.0.34',
+            'version' => '3.0.34.0',
+            'reference' => '56c79f16a6ae17e42089c06a2144467acc35348a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpseclib/phpseclib',
             'aliases' => array(),

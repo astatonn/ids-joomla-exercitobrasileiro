@@ -12,17 +12,13 @@ defined('_JEXEC') or die;
 
 ?>
 <div class="blog-featured">
-    <?php 
-    // if ($this->params->get('show_page_heading') != 0) : 
-    ?>
-    <!-- <div class="page-header">
-        <h1> -->
-        <?php 
-         //echo $this->escape($this->params->get('page_heading')); 
-         ?>
-        <!-- </h1>
-    </div> -->
-    <?php // endif; ?>
+    <?php if ($this->params->get('show_page_heading') != 0) : ?>
+    <div class="page-header">
+        <h1>
+        <?php echo $this->escape($this->params->get('page_heading')); ?>
+        </h1>
+    </div>
+    <?php endif; ?>
 
     <?php if (!empty($this->lead_items)) : ?>
         <div class="blog-items items-leading <?php echo $this->params->get('blog_class_leading'); ?>">
