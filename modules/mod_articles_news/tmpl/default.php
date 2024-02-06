@@ -21,8 +21,6 @@ if (!$list) {
     <?php foreach ($list as $item) : ?>
         <div class="mod-articlesnews__item" itemscope itemtype="https://schema.org/Article">
             <?php require ModuleHelper::getLayoutPath('mod_articles_news', '_item'); ?>
-            
-            
         </div>
     <?php endforeach; ?>
 </div>

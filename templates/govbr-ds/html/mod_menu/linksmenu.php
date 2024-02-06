@@ -36,4 +36,5 @@ foreach ($list as $i => &$item) {
 
     echo HTMLHelper::_('link', OutputFilter::ampReplace(htmlspecialchars($item->flink, ENT_COMPAT, 'UTF-8', false)), $linktype, $attributes);
 }
+
 ?>

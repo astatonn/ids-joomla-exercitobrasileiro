@@ -1,20 +1,10 @@
 {
   "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
   "name": "joomla",
-  "version": "5.0.0",
+  "version": "5.0.2",
   "description": "Joomla CMS",
   "license": "GPL-2.0-or-later",
   "assets": [
-    {
-      "name": "diff",
-      "type": "script",
-      "uri": "vendor/diff/diff.js",
-      "attributes": {
-        "defer": true
-      },
-      "package": "diff",
-      "version": "5.1.0"
-    },
     {
       "name": "es-module-shims",
       "type": "script",
@@ -26,14 +16,14 @@
       "version": "1.8.0"
     },
     {
-      "name": "accessibility",
+      "name": "diff",
       "type": "script",
-      "uri": "vendor/accessibility/accessibility.min.js",
+      "uri": "vendor/diff/diff.js",
       "attributes": {
         "defer": true
       },
-      "package": "accessibility",
-      "version": "3.0.17"
+      "package": "diff",
+      "version": "5.1.0"
     },
     {
       "name": "wcpolyfill",
@@ -50,14 +40,14 @@
       "version": "2.8.0"
     },
     {
-      "name": "short-and-sweet",
+      "name": "accessibility",
       "type": "script",
-      "uri": "vendor/short-and-sweet/short-and-sweet.min.js",
+      "uri": "vendor/accessibility/accessibility.min.js",
       "attributes": {
         "defer": true
       },
-      "package": "short-and-sweet",
-      "version": "1.0.4"
+      "package": "accessibility",
+      "version": "3.0.17"
     },
     {
       "name": "awesomplete",
@@ -85,6 +75,42 @@
       ],
       "package": "awesomplete",
       "version": "1.1.5"
+    },
+    {
+      "name": "cropperjs",
+      "type": "style",
+      "uri": "vendor/cropperjs/cropper.min.css",
+      "package": "cropperjs",
+      "version": "1.6.1"
+    },
+    {
+      "name": "cropper-module",
+      "type": "script",
+      "uri": "vendor/cropperjs/cropper.esm.js",
+      "importmap": true,
+      "package": "cropperjs",
+      "version": "1.6.1"
+    },
+    {
+      "name": "cropperjs",
+      "type": "script",
+      "deprecated": true,
+      "uri": "vendor/cropperjs/cropper.min.js",
+      "attributes": {
+        "defer": true
+      },
+      "package": "cropperjs",
+      "version": "1.6.1"
+    },
+    {
+      "name": "cropperjs",
+      "type": "preset",
+      "dependencies": [
+        "cropperjs#style",
+        "cropperjs#script"
+      ],
+      "package": "cropperjs",
+      "version": "1.6.1"
     },
     {
       "name": "choicesjs",
@@ -148,6 +174,16 @@
       "version": "5.2.0"
     },
     {
+      "name": "short-and-sweet",
+      "type": "script",
+      "uri": "vendor/short-and-sweet/short-and-sweet.min.js",
+      "attributes": {
+        "defer": true
+      },
+      "package": "short-and-sweet",
+      "version": "1.0.4"
+    },
+    {
       "name": "hotkeysjs",
       "type": "script",
       "uri": "vendor/hotkeysjs/hotkeys.min.js",
@@ -158,40 +194,11 @@
       "version": "3.12.0"
     },
     {
-      "name": "cropperjs",
-      "type": "style",
-      "uri": "vendor/cropperjs/cropper.min.css",
-      "package": "cropperjs",
-      "version": "1.6.1"
-    },
-    {
-      "name": "cropper-module",
+      "name": "jquery",
       "type": "script",
-      "uri": "vendor/cropperjs/cropper.esm.js",
-      "importmap": true,
-      "package": "cropperjs",
-      "version": "1.6.1"
-    },
-    {
-      "name": "cropperjs",
-      "type": "script",
-      "deprecated": true,
-      "uri": "vendor/cropperjs/cropper.min.js",
-      "attributes": {
-        "defer": true
-      },
-      "package": "cropperjs",
-      "version": "1.6.1"
-    },
-    {
-      "name": "cropperjs",
-      "type": "preset",
-      "dependencies": [
-        "cropperjs#style",
-        "cropperjs#script"
-      ],
-      "package": "cropperjs",
-      "version": "1.6.1"
+      "uri": "vendor/jquery/jquery.min.js",
+      "package": "jquery",
+      "version": "3.7.1"
     },
     {
       "name": "jquery-migrate",
@@ -202,13 +209,6 @@
       ],
       "package": "jquery-migrate",
       "version": "3.4.1"
-    },
-    {
-      "name": "jquery",
-      "type": "script",
-      "uri": "vendor/jquery/jquery.min.js",
-      "package": "jquery",
-      "version": "3.7.1"
     },
     {
       "name": "webcomponent.joomla-alert",
@@ -279,43 +279,6 @@
       "version": "0.2.0"
     },
     {
-      "name": "chosen",
-      "type": "style",
-      "uri": "vendor/chosen/chosen.css",
-      "package": "chosen-js",
-      "version": "1.8.7"
-    },
-    {
-      "name": "chosen",
-      "type": "script",
-      "uri": "vendor/chosen/chosen.jquery.js",
-      "dependencies": [
-        "jquery"
-      ],
-      "package": "chosen-js",
-      "version": "1.8.7"
-    },
-    {
-      "name": "chosen",
-      "type": "preset",
-      "dependencies": [
-        "chosen#style",
-        "chosen#script"
-      ],
-      "package": "chosen-js",
-      "version": "1.8.7"
-    },
-    {
-      "name": "metismenujs",
-      "type": "script",
-      "uri": "vendor/metismenujs/metismenujs.min.js",
-      "attributes": {
-        "defer": true
-      },
-      "package": "metismenujs",
-      "version": "1.4.0"
-    },
-    {
       "name": "minicolors",
       "type": "style",
       "uri": "vendor/minicolors/jquery.minicolors.css",
@@ -354,6 +317,43 @@
       },
       "package": "skipto",
       "version": "4.1.7"
+    },
+    {
+      "name": "chosen",
+      "type": "style",
+      "uri": "vendor/chosen/chosen.css",
+      "package": "chosen-js",
+      "version": "1.8.7"
+    },
+    {
+      "name": "chosen",
+      "type": "script",
+      "uri": "vendor/chosen/chosen.jquery.js",
+      "dependencies": [
+        "jquery"
+      ],
+      "package": "chosen-js",
+      "version": "1.8.7"
+    },
+    {
+      "name": "chosen",
+      "type": "preset",
+      "dependencies": [
+        "chosen#style",
+        "chosen#script"
+      ],
+      "package": "chosen-js",
+      "version": "1.8.7"
+    },
+    {
+      "name": "metismenujs",
+      "type": "script",
+      "uri": "vendor/metismenujs/metismenujs.min.js",
+      "attributes": {
+        "defer": true
+      },
+      "package": "metismenujs",
+      "version": "1.4.0"
     },
     {
       "name": "qrcode",
