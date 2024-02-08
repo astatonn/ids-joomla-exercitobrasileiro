@@ -3,10 +3,7 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Helper\ModuleHelper;
 
-// Obtém os parâmetros do módulo
-$params = json_decode(ModuleHelper::getModule('mod_links')->params, true);
 
-$linkAmount = $params['link-amount'];
 
 ?>
 <div class="container">
@@ -22,7 +19,7 @@ $linkAmount = $params['link-amount'];
 
 
     <div class="links-container">
-        <?php for ($i = 1; $i <= $linkAmount ; $i++) : ?>
+        <?php for ($i = 1; $i <= $params['link-amount'] ; $i++) : ?>
             <div class="link-col">
                 <a href="<?php echo $params['url-link-' . $i]; ?>" target="_blank" class="link-link">
                     <div class="link-card br-card">
