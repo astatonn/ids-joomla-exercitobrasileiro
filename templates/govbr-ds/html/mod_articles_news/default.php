@@ -24,6 +24,8 @@ if (count($list) < 5) :
     endif;
 endif;
 
+// echo '<pre>';
+// print_r($list);
 
 ?>
 <div class="container">
@@ -36,6 +38,7 @@ endif;
     </div>
     <div class="links-container">
         <?php foreach ($list as $item) : ?>
+            <?php //echo '<pre>'; //print_r($item); ?>
             <?php if (!empty($item->imageSrc)) : ?>
 
                 <div class="link-col br-center-articles <?php echo $colunas; ?>">
